@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>techdegree-project-02</title>
     <link href="css/normalize.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
@@ -8,7 +9,7 @@
 
   <body>
     <header>
-      <div class="container" id="home">
+      <div class="container clearfix" id="home">
         <h1 class="name">Student Name</h1>
         <nav class="main-nav">
           <ul>
@@ -21,41 +22,41 @@
     </header>
 
     <div id="intro">
-      <div class="container">
+      <div class="container clearfix">
         <img id="intro-image" src="images/responsive-layout-profile.png" alt="Photograph of a student">
         <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse, and I'm excited to put all of my skills to use!</p>
       </div>
     </div>
 
     <section id="portfolio">
-      <div class="container">
+      <div class="container clearfix">
         <h3>PORTFOLIO</h3>
-        <div class="portfolio-item">
+        <div class="portfolio-item col">
           <img src="images/portfolio-1.png" alt="Drawing of a newspaper.">
           <h2>Marketing Page</h2>
           <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item col">
           <img src="images/portfolio-2.png" alt="Drawing of a internet search bar.">
           <h2>Search Page</h2>
           <p>This project searches through a specific database to find information that the user is trying to look up.</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item col">
           <img src="images/portfolio-3.png" alt="Drawing of an application designed for travellers.">
           <h2>Travel App</h2>
           <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item col">
           <img src="images/portfolio-4.png" alt="Drawing of a map.r">
           <h2>Map of Favorite Spots</h2>
           <p>This project uses mapping APIs to plot points for my favorite spost in the city for a do-it-yourself walking tour.</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item col">
           <img src="images/portfolio-5.png" alt="Drawing of a template for a photo gallery.">
           <h2>Photo Gallery</h2>
           <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item col">
           <img src="images/portfolio-6.png" alt="Drawing of an online calculator.">
           <h2>Calculator</h2>
           <p>Someone can enter in the numbers they want, press the big blue button, and get the result.</p>
@@ -74,7 +75,14 @@
 
     <footer class="clearfix">
       <h5 class="nav-left">Student Name</h5>
-      <h5 class="nav-right"><a href="#home">BACK TO TOP</a></h5>
+      <h6 class="nav-right"><a href="#home">BACK TO TOP</a></h6>
+      <nav class="footer-nav clearfix">
+        <ul class="footer-nav-list">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
     </footer>
 
   </body>

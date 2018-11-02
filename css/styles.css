@@ -19,7 +19,7 @@ h3 {
 }
 
 h5,
-h5 a {
+h6 a {
   color: #4c4c4c;
 }
 
@@ -35,7 +35,7 @@ p {
 /*main navigation*/
 
 .main-nav {
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .main-nav a {
@@ -49,7 +49,7 @@ p {
   font-weight: bold;
 }
 
-/*main layout*/
+/*main 1-col layout*/
 
 .container {
   display: block;
@@ -72,8 +72,8 @@ p {
 }
 
 .col {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .clearfix::after {
@@ -99,6 +99,28 @@ footer {
   float: right;
 }
 
+.footer-nav {
+  position: relative;
+  visibility: hidden;
+}
+
+.footer-nav-list {
+  position: absolute;
+  bottom: 1px;
+  right: 0px;
+}
+
+.footer-nav li {
+  display: inline-block;
+}
+
+.footer-nav a {
+  color: #4c4c4c;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
 /* ID tags*/
 
 #intro-image {
@@ -109,8 +131,79 @@ footer {
 
 #portfolio {
   background-color: white;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+#contact p {
+  max-width: 425px;
 }
 
 #contact a {
   color: grey;
+}
+
+/* Media Queries*/
+
+@media (min-width: 768px) {
+
+  .container {
+    width: 90%;
+    max-width: 1023px;
+    margin: 0 auto;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+
+  .main-nav a {
+    background-color: #fafafa;
+  }
+
+  #intro-image {
+    float: right;
+    margin-left: 20px;
+  }
+
+  #intro p {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .col {
+    float: left;
+    width: 50%;
+  }
+
+  .portfolio-item p {
+    width: 80%;
+  }
+
+  footer h6 {
+    visibility: hidden;
+  }
+
+  .footer-nav {
+    visibility: visible;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .col {
+    float: left;
+    width: 33.3333%;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+    margin-top: 1em;
+  }
 }
