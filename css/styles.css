@@ -157,7 +157,8 @@ footer {
 }
 
 #skills p {
-  max-width: 900px;
+  max-width: 1000px;
+  font-size: 18px;
 }
 
 #skills .container {
