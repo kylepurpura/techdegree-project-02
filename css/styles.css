@@ -94,28 +94,36 @@ p {
 /* Footer*/
 
 footer {
+  position: relative;
+  width: 90%;
+  margin-top: 2.5em;
+  margin-bottom: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  margin-top: 2.5em;
-  margin-bottom: .5em;
+  border: 1px solid red;
 }
 
 .nav-left {
-  float: left;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .nav-right {
-  float: right;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 .footer-nav {
-  position: relative;
   visibility: hidden;
 }
 
 .footer-nav-list {
   position: absolute;
-  bottom: 1px;
+  bottom: 0px;
   right: 0px;
 }
 
