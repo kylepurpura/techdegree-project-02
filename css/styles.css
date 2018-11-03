@@ -156,6 +156,14 @@ footer {
   margin: 0 auto;
 }
 
+#skills p {
+  max-width: 900px;
+}
+
+#skills .container {
+  border-bottom: 1px solid #654321;
+}
+
 #contact p {
   max-width: 425px;
 }
