@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #fafafa;
+    background-color: #ebe8e3;
 }
 
 h2,
@@ -18,19 +18,27 @@ h3 {
   color: #4c4c4c;
 }
 
-h5,
+h4,
 h6 a {
   color: #4c4c4c;
 }
 
+h6 a {
+  font-family: 'Libre Baskerville', serif;
+}
+
 p {
-  color: grey;
+  color: #6e644d;
   max-width: 90%;
   margin: 0 auto;
 }
 
 .name {
   text-align: center;
+}
+
+.libre {
+  font-family: 'Libre Baskerville', serif;
 }
 /*main navigation*/
 
@@ -43,9 +51,10 @@ p {
   display: block;
   padding: 10px 15px;
   margin-bottom: 5px;
+  font-family: 'Libre Baskerville', serif;
   font-size: 16px;
   color: #4c4c4c;
-  background-color: white;
+  background-color: #f3f2ee;
   font-weight: bold;
 }
 
@@ -116,6 +125,7 @@ footer {
 
 .footer-nav a {
   color: #4c4c4c;
+  font-family: 'Libre Baskerville', serif;
   font-size: 12px;
   font-weight: bold;
   margin-left: 10px;
@@ -130,7 +140,7 @@ footer {
 }
 
 #portfolio {
-  background-color: white;
+  background-color: #fbfbfa;
   max-width: 1366px;
   margin: 0 auto;
 }
@@ -140,7 +150,7 @@ footer {
 }
 
 #contact a {
-  color: grey;
+  color: #6e644d;
 }
 
 /* Media Queries*/
@@ -159,7 +169,7 @@ footer {
   }
 
   .main-nav a {
-    background-color: #fafafa;
+    background-color: #ebe8e3;
   }
 
   #intro-image {
@@ -188,6 +198,8 @@ footer {
 
   .footer-nav {
     visibility: visible;
+    max-width: 1366px;
+    margin: 0 auto;
   }
 }
 
