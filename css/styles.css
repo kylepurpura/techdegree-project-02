@@ -193,11 +193,6 @@ footer {
 
 @media (min-width: 1024px) {
 
-  .col {
-    float: left;
-    width: 33.3333%;
-  }
-
   .name {
     float: left;
   }
@@ -206,4 +201,14 @@ footer {
     float: right;
     margin-top: 1em;
   }
+
+  .col {
+    float: left;
+    width: 33.3333%;
+  }
+
+  .portfolio-item p {
+    width: 75%;
+  }
+
 }
